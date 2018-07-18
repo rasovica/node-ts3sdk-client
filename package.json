@@ -1,5 +1,5 @@
 {
-  "name": "node-ts3sdk-client",
+  "name": "ts3sdk-client",
   "version": "3.0.4-14",
   "description": "TeamSpeak 3 SDK Client addon for Node.js",
   "license": "MIT",
@@ -9,6 +9,21 @@
     "url": "git://github.com/svenpaulsen/node-ts3sdk-client.git"
   },
   "devDependencies": {
+    "electron": "^2.0.5",
     "nan": "^2.7.0"
-  }
+  },
+  "scripts": {
+    "start": "electron .",
+    "install": "node-gyp rebuild"
+  },
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/svenpaulsen/node-ts3sdk-client/issues"
+  },
+  "homepage": "https://github.com/svenpaulsen/node-ts3sdk-client#readme",
+  "directories": {
+    "doc": "doc",
+    "example": "examples"
+  },
+  "author": "Ras and Jan"
 }
